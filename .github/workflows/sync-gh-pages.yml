@@ -27,6 +27,8 @@ jobs:
 
       - name: ♻️ 编译静态文件
         run: |
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+          npm install -g pnpm
           nvm i && nvm use
           pnpm i
           pnpm web build
