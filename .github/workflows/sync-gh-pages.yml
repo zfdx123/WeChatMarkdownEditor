@@ -23,7 +23,7 @@ jobs:
       - name: 🔰 修改文件
         run: |
           # 使用 sed 替换 base 的 md 为 WeChatMarkdownEditor
-          sed -i 's|base: process\.env\.SERVER_ENV === `NETLIFY` ? `/` : `/md/`|base: process.env.SERVER_ENV === `NETLIFY` ? `/` : `/WeChatMarkdownEditor/`|' vite.config.ts
+          sed -i 's|base: process\.env\.SERVER_ENV === `NETLIFY` ? `/` : `/md/`|base: process.env.SERVER_ENV === `NETLIFY` ? `/` : `/WeChatMarkdownEditor/`|' apps/web/vite.config.ts
 
       - name: ♻️ 编译静态文件
         run: |
