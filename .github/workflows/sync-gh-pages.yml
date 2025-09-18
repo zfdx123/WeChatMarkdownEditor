@@ -27,8 +27,9 @@ jobs:
 
       - name: ♻️ 编译静态文件
         run: |
-          npm install
-          npm run build
+          nvm i && nvm use
+          pnpm i
+          pnpm web build
 
       - name: 🚀 上传静态文件到 GitHub Pages Artifact
         uses: actions/upload-pages-artifact@v3
