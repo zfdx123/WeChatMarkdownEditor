@@ -36,7 +36,7 @@ jobs:
       - name: 🚀 上传静态文件到 GitHub Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./dist" # 项目打包后的静态文件路径
+          path: "apps/web/dist" # 项目打包后的静态文件路径
 
       - name: 📄 发布到 GitHub Pages
         uses: actions/deploy-pages@v4
